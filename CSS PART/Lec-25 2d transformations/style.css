@@ -1,0 +1,50 @@
+*{
+    padding:0;
+    margin:0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    border: 3px solid brown;
+    background-color: violet;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 30vh;
+    width: 20vw;
+    background-color: blanchedalmond;
+    border: 3px  solid hotpink ;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    /* adding transition for smooth transformation */
+    transition: all 6s linear 0s;
+
+}
+p{
+    font-size: 30px;
+}
+
+/* now using transformation */
+.box:hover{
+    /* transform: rotate(46deg); */
+    /* transform: rotate(-120deg); */
+    /* transform: scale(1.5); */
+    /* transform: scaleX(1.5); */
+    /* transform: skew(30deg,40deg); */
+    /* transform: skewY(30deg); */
+    /* transform: translate(300px,-250px); */
+
+    /* SHORTHAND NOTATION */
+    /* transform: matrix(scaleX(),skewY,skewX(),scaleY(),translateX(),translateY()); */
+    transform: matrix(0,30,30, 0,200,-200);
+}

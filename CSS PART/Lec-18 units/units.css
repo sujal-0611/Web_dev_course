@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.con{
+    background-color: aquamarine;
+    width: 30vw;
+    height: 5vh;
+    border: 10px solid pink;
+}
+
+.con2{
+    background-color: bisque;
+    /* height: 3rem; */
+    width: 60vw;
+    font-size : 3px;
+    border: 5px dashed blue;
+
+}
+
+.con3{
+    font-size: 10em;
+}

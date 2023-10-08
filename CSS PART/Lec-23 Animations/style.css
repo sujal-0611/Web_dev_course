@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    background-color: blanchedalmond;
+    height: 100vh;
+    width: 100vw;
+    border: 3px solid brown;
+
+    box-sizing: border-box;
+
+}
+.text{
+    background-color: pink;
+    width:96vw;
+    border: 3px solid green;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.box{
+
+    background-color: pink;
+    height: 50px;
+    width: 150px;
+    border: 3px solid green;
+    border-radius: 20px;
+    margin: 20px;
+
+    /* make position relative so that animations can be applied to it */
+    position: relative; 
+
+    /* ANIMATIONS */
+    
+    /* first provide user-defined(identifier in CPP/java) name for animation (can be anything)*/
+    /* animation-name: sujal; */
+
+    /* provide duration for which animation will last */
+    /* animation-duration: 5s; */
+
+    /* provide how many times animation will occur */
+    /* animation-iteration-count: infinite; */
+
+    /* if we want to delay the start of animation */
+    /* animation-delay: s; */
+
+    /* animation speed */
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-in-out; */
+    /* custom speed  */
+    /* animation-timing-function: cubic-bezier(0.7,0.1,0.1,0.1); */
+
+    /* to provite back and forth type animation i.e provide direction */
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+
+    /* to make animation stop at destination style (comment animation-direction then it will works */
+    /* animation-fill-mode: forwards; */
+
+    /* *****SHORTHAND NOTATION to use all animation properties**** */
+    /* syntax : animation : duration | timing function(speed)| delay | iteration count | direction | fill mode | play state | name(identifier)  */
+    animation: 5s linear 2s infinite alternate none running sujal;
+
+}
+
+/* now add keyframes Rule to control how animations will occur (anything starting @ is rule)*/
+@keyframes sujal {
+    /* form this source styling */
+    from{
+        top: 0;
+        left: 0;
+  
+    }
+    /* to this destination styling */
+    to{
+        /* top: 120px; */
+        top:0;
+        left: 87vw;
+    }
+}
+
+#box2{
+    background-color: rgb(221, 150, 57);
+    height: 50px;
+    width: 150px;
+    border: 3px solid rgb(15, 209, 15);
+    border-radius: 20px;
+    margin: 20px;
+
+    /* make position relative so that animations can be applied to it */
+    position: relative; 
+
+    animation: 5s linear 2s infinite alternate none running secondbox;
+}
+
+@keyframes secondbox {
+    from{
+        top: 55vh;
+        left: 87vw;
+    }
+    to{
+        top: 55vh;
+        left: 0px;
+    }
+    
+}
+
+.circle{
+    background-color: rgb(221, 150, 57);
+    height: 80px;
+    width: 80px;
+    border: 3px solid rgb(212, 20, 203);
+    border-radius: 80px;
+
+    top: 30vh;
+
+    /* make position relative so that animations can be applied to it */
+    position: relative; 
+    margin: 20px;
+
+    animation: 5s linear 3s infinite alternate none running circles;
+}
+@keyframes circles {
+   0%{
+    top: 0;
+    left: 0;;
+   }
+   25%{
+    top:50vh;
+    left:87vw;
+   }
+   50%{
+    top:0;
+    left:87vw;
+   }
+   75%{
+    top:50vh;
+    left:0;
+   }
+   100%{
+    top:0;
+    left:0;
+   }
+    
+}

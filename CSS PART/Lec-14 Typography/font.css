@@ -1,0 +1,27 @@
+.paras{
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    line-height: 50px; /*distance between lines*/
+}
+
+#paraid1{
+    /* rgb */
+    color: rgb(183, 95, 223);
+
+    /* rbga- rgb with alpha value */
+    /* alpha value decide transparency */
+    background-color: rgba(176, 224, 30, 0.548);
+}
+
+#paraid2{
+    /* hexadecimal values(with aplha value) */
+    color: #2294cdcd;
+
+    /* HSL -hue saturation light */
+    background-color: hsl(97, 80%, 50%);
+    
+    /* hsl with alpha */
+    /* background-color: hsla(97, 80%, 50%, 0.686); */
+}

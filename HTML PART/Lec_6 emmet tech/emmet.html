@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- paragraph ke andar image tag -->
+    <!--emmet command: p>img -->
+    <p><img src="" alt=""></p>
+
+    <!-- paragraph ke andar paragraph ke andar paragraph -->
+    <!--emmet command: p>p>p -->
+    <p>
+        <p>
+            <p></p>
+        </p>
+    </p>
+
+    <!-- 2 separate tags chaiye (not nested one of those) -->
+    <!--emmet command: section+article -->
+    <section></section>
+    <article></article>
+
+    <!-- ids,classes -->
+    <!-- emmet : p#id1 -->
+    <p id="id1"></p>
+    <!--emmet : p.clas1 -->
+    <p class="clas1"></p>
+    <!-- to create multi classes -->
+    <!--emmet command: p>img -->
+    <!-- mammal-class1 dog-class2 germanshephard-class3 -->
+    <p class="mammal dog germanshepherd"></p>       
+
+    <!--emmet command: p{content inside paragraph} -->
+    <p>content inside paragraph</p>
+
+    <!--emmet command: p>p*3  -->
+    <p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </p>
+
+    <!--emmet command: section>p>article*3 -->
+    <section>
+        <p>
+            <article></article>
+            <article></article>
+            <article></article>
+        </p>
+    </section>
+
+    <!-- table with 3 rows and 4 columns -->
+    <!-- emmet command: table>(tr>td*4)*3 -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- article ke andar 2 elements 1.paragraph 2.footer, and paragraph ke andar 2 unordered list -->
+    <!-- article>(p>ul*2)+footer -->
+    <article>
+        <p>
+            <ul></ul>
+            <ul></ul>
+        </p>
+        <footer></footer>
+    </article>
+
+    <!-- Making combos  article>(ul>li*3)+section -->
+    <article>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <section></section>
+    </article>
+
+    <!-- DIV TAG: for wrapping code in one container -->
+    <div>
+        <article>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <section></section>
+        </article>
+    </div>
+
+    <!-- emmet shortcut fo div: .class_name -->
+    <div class="class_name"></div>
+
+    <!-- BLOCK VS INLINE -->
+    <div style="background-color: aquamarine;"> DIV TAG IS BLOCK ELEMENT i.e take whole line space</div>
+    <p style="background-color: antiquewhite;">paragraph tag is also a block </p>
+    <span style="background-color: yellow;">span is inline element i.e take space only till its content</span>
+    <span style="background-color: yellow;">another span tag can be printed on same line</span>
+    <p></p>
+    <div style="background-color: aqua; display: inline;">div tag being converted to inline </div>
+    <span style="background-color: yellow; display: block;"> span tag being converted to block </span>
+    
+    <!-- nav tag is sort of tag used for menus and provide navigation links -->
+    <nav>
+        <ul>
+            <!-- making list items inline so that all list item will present on same line -->
+            <li style="display: inline;">
+                <a href="">home</a>
+            </li>
+            <li style="display: inline;">
+                <a href="">contact us</a>
+            </li>
+            <li style="display: inline;">
+                <a href="">login</a>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    height: 400px;
+    /* width: 400px; */
+    /* aspect-ratio: 2/1; */
+
+    border: 6px solid purple;
+    background-color: antiquewhite;
+
+    /* MAKING container as flex container */
+    display: flex;
+
+    flex-direction: row;
+
+    /* to prevent squeezing of items and items go to next line space if space is reducing */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row-reverse wrap; */
+
+    /* justify-content (works along main axis ?)*/
+    /* justify-content: center; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* align-items (works along cross axis) */
+    /* align-items:start; */
+    /* align-items: stretch; */
+
+    /* **to make it at center of container */
+    justify-content: start;
+    align-items: start;
+    
+    
+}
+
+.box{
+    /* height: 100px;
+    width: 100px; */
+    /* aspect-ratio: 5/4; */
+    border: 3px solid green;
+}
+
+#box1{
+    background-color: aquamarine;
+    /* flex-shrink and flex-grow */
+    /* flex-shrink: 6;
+    flex-grow: 6; */
+
+    align-self: start;
+    
+}
+#box2{
+    background-color: beige;
+    align-self: center;
+}
+#box3{
+    background-color: yellow;
+    align-self: end;
+}

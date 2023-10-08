@@ -1,0 +1,4 @@
+let a = prompt("enter a number");
+//but input will be string format , so to convert it to number use:
+a = Number.parseInt(a);
+console.log("the value of the variable a is" + a);

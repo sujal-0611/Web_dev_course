@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    height: 70vh;
+    width: 60%;
+    background-color: yellow;
+    border: 5px solid green;
+}
+.box1{
+    margin: 1%;
+    height: 40%;
+    width:40%;
+    background-color: lightblue;
+    border: 5px solid purple;
+}
+.box2{
+    margin: 1%;
+    height: 40%;
+    width:40%;
+    background-color: lightblue;
+    border: 5px solid purple;
+}
+@media(min-width:300px) and (max-width:500px){
+    .box{
+        background-color: pink;
+    }
+    .box1{
+        background-color: mediumorchid;
+    }
+    .box2{
+        background-color: blanchedalmond;
+    }
+}

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 100%;
+    
+    /* background-color: antiquewhite; */
+    /*copied from color gradients */
+    background: hsla(154, 100%, 76%, 1);
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#84FFC9", endColorstr="#AAB2FF", GradientType=1 );
+    
+    border: 3px solid greenyellow;
+    overflow-x: none;
+}
+/*HEADER */
+#navContainer{
+    /* background-color: rgb(170, 170, 209); */
+   
+
+    /*copied from color gradients */
+    background: hsla(238, 100%, 71%, 1);
+    background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
+    
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 100%;
+}
+#logo{
+    height:70px;
+    margin-right: 5px;
+    border-radius: 20%;
+}
+/*
+#logo_name{
+    font-size: 20px;
+    font-weight: 520;
+    text-decoration: underline ;
+}
+*/
+#lists{
+    /* margin-top:20px; */
+    width: 98%;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+    margin-left:20px;
+    margin-right:20px;
+
+    list-style: none;
+    font-size: 20px;
+    font-weight: 520;
+    text-decoration: none ;
+    color: MistyRose;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+a{
+    text-decoration: none;
+    color: MistyRose;
+}
+
+/* MAIN BODY */
+#contentBox{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+
+    box-shadow:  0px 0px 30px black ;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftbox{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.rightbox{
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s linear 0s;
+
+    box-shadow: 1px 1px 7px black;
+    border-radius: 30%;
+}
+.rightbox img{
+    /* make size of image to fully occupy the right box container */
+    height: 100%;   
+    border-radius: 30%;
+
+    /* to remove bit of extra white space */
+    overflow-x: hidden;
+    
+}
+.rightbox:hover{
+    transform : scale(1.2);
+    
+}
+
+.rightbox .overlay{
+    /* to make overlay container on imag but invisible */
+    position: absolute;
+    top:0;
+    left:0;
+    /* to provide gray filter */
+    background-color: rgba(112, 111, 111, 0.548);
+    /* to make text overlay occupy whole right box container as well */
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30%;
+
+    /* to make overlaw invisible normally */
+    opacity: 0;
+
+    /* for smooth overlay on image when hovering */
+    transition: all 1s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity: 100;
+    
+}
+.rightbox .overlay span{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+/* FOOTER*/
+.footerBox{
+    
+    margin-top: 30px;
+    background-image: linear-gradient(90deg, rgb(247, 233, 232) 0%, rgb(233, 240, 170) 50%, rgb(153, 172, 235) 100%);
+
+}
+.footerBox p{
+    font-size: 20px;
+    color: palevioletred;
+    
+}

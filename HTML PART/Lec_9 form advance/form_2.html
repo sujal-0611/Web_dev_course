@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+
+    <form >
+        <label for="name">Name:</label>  <br/>
+        <input type="text" name="name" id="name">
+
+        <br/><br/>
+
+        <label for="mailing">Email:</label> <br/>
+        <input type="email" name="mailing" id="mailing">
+
+        <br/><br/>
+
+        <label for="Phone">Phone:</label> <br/>
+        <input type="tel" name="Phone" id="Phone">
+
+        <br/><br/>
+
+        <label for="Resume">Resume:</label><br/>
+        <input type="file" name="Resume" id="Resume">
+
+        <br/><br/>
+
+        <label for="exp">Experience:</label><br/>
+        <!-- to show a field where only number is submitted and have min 0 and max 50 range -->
+        <input type="number"   name="exp" id="exp" min="0" max="50">
+        <br/><br/>
+        
+        <fieldset>
+            <legend>Skills:</legend>
+
+            <input type="checkbox" name="TOI" id="TOI"><br/>
+            <label for="TOI">HTML</label>
+
+            <br/><br/>
+
+            <input type="checkbox" name="TOI" id="TOI"><br/>
+            <label for="TOI">CSS</label>
+            
+            <br/><br/>
+
+            <input type="checkbox" name="TOI" id="TOI"><br/>
+            <label for="TOI">JavaScript</label>
+        </fieldset>
+
+        <br/><br/>
+
+        <label for="edu">highest Education:</label> <br/>
+        <select name="edu" id="edu">
+            <option value="HS">High School</option>
+            <option value="diploma">Diploma</option>
+            <option value="Graduation">Graduation</option>
+        </select>
+
+        <fieldset>
+            <legend>Availability:</legend>
+            
+            <input type="radio" name="Job" id="FULL-TIME">
+            <label for="FULL-TIME">Full- Time</label>
+
+            <br/><br/>
+
+            <input type="radio" name="Job" id="PART-TIME">
+            <label for="PART-TIME">Part-Time</label>
+        </fieldset>
+
+        <label for="Comments">Additional Comments:</label><br/>
+        <textarea name="Comments" id="Comments" cols="30" rows="6"></textarea>
+        <button>Submit Application</button>
+    </form>
+</body>
+</html>

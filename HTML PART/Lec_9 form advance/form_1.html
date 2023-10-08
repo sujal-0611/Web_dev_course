@@ -1,0 +1,64 @@
+<!-- Proj 1 simple form creation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Registration </h1>
+
+    <br/>
+
+    <form>
+        <label for="name">Name:</label>  <br/>
+        <input type="text" name="name" id="name">
+
+        <br/><br/>
+
+        <label for="mailing">Email:</label> <br/>
+        <input type="email" name="mailing" id="mailing">
+
+        <br/><br/>
+
+        <label for="Phone">Phone:</label> <br/>
+        <input type="tel" name="Phone" id="Phone">
+
+        <br/><br/>
+
+        <label for="Occup">Occupation:</label><br/>
+        <select name="Occup" id="Occup">
+            <option value="Student">Student</option>
+            <option value="Professional">Professional</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br/><br/>
+
+        <fieldset>
+            <legend>Topics of Interest:</legend> <br/>
+
+            <input type="checkbox" name="TOI" id="TOI"><br/>
+            <label for="TOI">HTML</label>
+
+            <br/><br/>
+
+            <input type="checkbox" name="TOI" id="TOI"><br/>
+            <label for="TOI">CSS</label>
+            
+            <br/><br/>
+
+            <input type="checkbox" name="TOI" id="TOI"><br/>
+            <label for="TOI">JavaScript</label>
+        </fieldset>
+        
+        <br/><br/>
+
+        <label for="comm">Comments</label><br/>
+        <textarea name="comm" id="comm" cols="30" rows="6"></textarea>
+        <button>Register</button>
+    </form>
+    
+</body>
+</html>

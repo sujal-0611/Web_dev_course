@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin: 0;
+    
+}
+
+.container{
+    background-color: aquamarine;
+    height: 70vh;
+    padding: 20px;
+    margin: 30px;
+    border: 3px solid blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    --color-karo: red;
+
+    background-color: bisque;
+    width: 350px;
+    height: 400px;
+    border: 3px solid blueviolet;
+    padding: 20px;
+   
+    justify-content: center;
+    align-items: center;
+    
+    /* adding shadow */
+
+    /* syntax box-shadow: x-offset y-offset color-of-shadow */
+    /* box-shadow: 10px 10px red; */
+
+    /* on opposite sides add negative */
+    /* box-shadow: -10px -10px red; */
+
+    /* add blur  */
+    /* syntax syntax box-shadow: x-offset y-offset  blur color-of-shadow   */
+    /* box-shadow: 10px 10px 5px red; */
+
+    /* add spread-radius(length) of shadow */
+    /* box-shadow: 10px 20px 7px 10px red; */
+
+    /* now inset - andar ki taraf shadow lana */
+    box-shadow: inset 10px 20px 5px var(--color-karo);
+
+    
+
+}

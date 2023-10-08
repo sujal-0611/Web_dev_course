@@ -1,0 +1,19 @@
+h3{
+    background-color: aquamarine;
+}
+
+h2{
+    background-color: antiquewhite;
+}
+
+/* using id-artic */
+#artic{
+    background-color: aquamarine;
+    font-size: large;
+}
+
+/* using class-paraclass */
+.paraClass {
+    background-color:yellow;
+    display: inline;
+}

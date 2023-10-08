@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin:0;
+}
+.box{
+    background-color: bisque;
+    height: 30vh;
+    width: 20vw;
+    border: 3px solid lightcoral;
+
+    /* transition - properties */
+    /* transition-property: width; apply transition on width property only */
+    /*transition-property: all;  */ /* on alll properties mentioned above in box class */
+    /* transition-duration: 6s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out; */
+
+    /* shorthand notation */
+    /* transition : property name | duration | easing function | delay */
+    transition: all 2s ease-out 0s;
+
+    /* To appy on multiple properties */
+    /* transition: 
+        width 3s, 
+        height 5s; */
+}
+/* now we need to create pseudo-class for box  in which we mention destination style for our transition */
+/* on hover i.e when we bring our mouse over the box element on screen */
+.box:hover{
+    width: 50vw;
+    height: 60vh;
+
+    background-color: purple;
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+
+    /* applying gradient */
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     /* center the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 55%;
+    width: 20%;
+    margin: auto;
+    background-color: beige;
+
+    border: 2px solid green;
+    border-radius: 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+
+    padding: 20px;
+  
+}
+
+.image{
+    height: 60%; 
+}
+.image img{
+    height: 100%;
+    border-radius: 5%;
+}
+
+.heading h2{
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.para p{
+    
+    font-family: serif;
+    font-size: 17px;
+    text-align:justify;
+
+}

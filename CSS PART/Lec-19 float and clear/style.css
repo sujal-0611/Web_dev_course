@@ -1,0 +1,34 @@
+#img1{
+    height: 150px;
+    float:right;
+}
+#img2{
+    height: 150px;
+    float: right;
+    clear: right; /*MAKE element right of img2 clear */
+}
+
+.box{
+    background-color: antiquewhite;
+    border: 2px solid green;
+
+    /* to prevent collapse */
+    overflow: auto;
+
+    /* overflow: hidden (this makes extra content that is flowing outside of container to be hidden*/
+}
+
+.item{
+    background-color: aqua;
+    height: 30px;
+    width: 40px;
+    margin: 10px;
+    border: 1px solid purple;
+
+    /* showing the great collapse */
+    float: left;
+}
+
+p{
+    font-size: 30px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- How to insert img, audio , video files and youtube links -->
+    <table>
+        <tr>
+            <td>
+                <img src="abcd.png" alt="Red Swan" height="120" loading="lazy"> <!-- loading="lazy" led to image not being egarly loaded-->
+            </td>
+            <td>
+                <H2 style="background-color: antiquewhite; display: inline;">Welcome to Attack on titan Page</H2>
+            </td>
+        </tr>
+
+    </table>
+    
+    <!-- adding audio in 2 ways -->
+
+    <!-- 1. -->
+    <p>Audio 1</p>
+    <audio src="001Ride it Hindi Remix.mp3" controls></audio>
+   
+    <!-- 2. -->
+    <p>audio 2</p>
+    <audio controls>
+        <source src="Alan Walker - Faded.mp3" type="audio/mp3">
+    </audio>
+    <br/>
+    
+    <!-- Videos two ways (similar to audio) -->
+    <!-- 1. -->
+    <p>Video 1</p>
+    <video src="World's Best Asassin OP.mkv" height="300px" controls></video>
+
+    <!-- 2. -->
+    <p>Video 2</p>
+    <video controls height="300px">
+        <source src="World's Best Asassin OP.mkv" type="video/mp4">
+    </video>
+
+    <br/>
+    <!-- iframes -->
+    <iframe src="../Lec_10 Resume project/html_only_proj.html" width="800px" height="500px"></iframe>
+
+    <br/>
+    <!-- embeding youtube video in a web page -->
+    <!-- this one wont work we need to make some changes -->
+    <iframe src="https://www.youtube.com/watch?v=gQMZ_In0ZRc&ab_channel=MrLowlander" title="avc" ></iframe>
+    <!--                           here: change watch to embed -->
+    <!--                                here: remove ?v= -->
+    <!-- changed iframe -->
+    <p>Youtube Video Added</p>
+    <iframe src="https://www.youtube.com/embed/JTzKKCehoNs" title="5cm per second" width="700px" height="500px"  ></iframe>
+
+    <p>Valorant Lore</p>
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/e_E9W2vsRbQ" title="DUELISTS // Official Launch Cinematic Trailer - VALORANT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br/>
+    <br/>
+</body>
+</html>
