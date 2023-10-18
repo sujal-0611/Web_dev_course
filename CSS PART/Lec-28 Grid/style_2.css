@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    padding: 1.5rem  ;
+    background-color: lightseagreen;
+
+    /* GRID */
+    display: grid;
+    row-gap: 10px;  
+    column-gap: 10px;
+
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+
+    /* to apply all grid- items in general */
+    justify-items: center;
+    align-items: center;
+
+}
+
+.item{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border: 2px solid yellow;
+
+    /* TO apply on each grid-item individuallly */
+    /* justify-self: center;
+    align-self: end; */
+}

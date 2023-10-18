@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    padding: 1.5rem  ;
+    background-color: lightseagreen;
+
+    /* GRID */
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    /* to arrange items in row-col format */
+    /* grid-template-rows: 100px 100px ; */
+    /*grid-template-rows: repeat(2,100px);*/    /*another way to write using repeat(no_of_items,dimension)*/
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: repeat(3,200px); */
+
+    /* NOW USING fractional unit as measurement */
+    /* read notes for better understanding of fractional unit(fr) */
+    /* grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr); */
+
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+.item {
+    /* height: 30%;  
+    width: 10%; */
+    background-color: lightpink;
+    border: 2px solid green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+@media (min-width:500px) {
+
+    .container{
+        grid-template-rows: repeat(4,1fr);
+         grid-template-columns: repeat(3,1fr);
+    }
+    .Header , .Footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .Side_Bar{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .Content_1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
