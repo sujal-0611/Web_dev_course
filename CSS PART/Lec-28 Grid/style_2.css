@@ -23,8 +23,9 @@ body{
     grid-template-columns: repeat(4,1fr);
 
     /* to apply all grid- items in general */
-    justify-items: center;
-    align-items: center;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
 
 }
 
