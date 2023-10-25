@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+/* 
+body{
+    display: grid;
+    place-items: center;
+} */
+/* body{
+        display: flex; 
+        place-content: center; 
+} */
+.container{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto; /* to place container at center of screeen */
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    /* border: 1px solid black; */
+}
+.head{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+.head h1{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.head p{
+    color: #757574;
+    font-size: 0.9rem;
+
+    width: 60%;     /* to make single line into two line so we reduce the width */
+    margin: 0 auto; /* to center the line */  
+}
+
+.main_container{
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 10px;
+}
+@media (min-width:690px) {
+    .main_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:1120px) {
+    .main_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+ @media (min-width:1390px) {
+    .main_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.card_container{
+    overflow: hidden;
+    border: 1px solid rgb(133, 136, 133);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+/*  */
+.card_image{ 
+    position: relative;
+    overflow: hidden;
+    height: 11rem;
+    
+}
+.card_image img {
+    height: 100%;
+    width: 100%;
+
+    /* making img absolute in card_image container */
+    position: absolute;
+
+    /* to fill the image to whole card_image container but not losing aspect ratio i.e imag will be cropped */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* on hovering whole card show scaling of image */
+.card_container:hover .card_image img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card_title{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #50504f;
+    font-size: 0.7rem;
+
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+/* on hovering cad title change its color */
+.card_title:hover{
+    color: rgb(111, 111, 206);
+}
+
+.card_content{
+    color: rgb(109, 106, 106);
+    font-size: 0.66rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.name_field{
+    
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-top: 1rem;  
+    margin-bottom: 1rem;
+
+}
+
+.author_avatar{
+    height: 40px;
+    border: 1 px solid rgb(71, 66, 66);
+    border-radius: 50%;
+    background-color: #d8d8d1;
+    overflow: hidden;
+
+    margin-right: 0.6rem;
+}
+
+.author_name{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.66rem;
+}
+.author_name span:first-child{
+    color: rgb(128, 128, 230);
+}
+.author_name span:nth-child(2){     
+    color: rgb(123, 123, 128);
+} 
+
+.TAG{
+    justify-self: end;
+    text-decoration: none;
+    border: 1px solid rgb(114, 109, 109);
+    border-radius: 3px;
+    color: #757574;
+    /* height: 1.5rem; */
+    padding: 0.2rem;
+    font-size: 0.75rem;
+}
+
+
